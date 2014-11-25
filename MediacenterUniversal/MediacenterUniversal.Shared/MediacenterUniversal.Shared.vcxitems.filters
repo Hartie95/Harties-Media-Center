@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CLCompile Include="$(MSBuildThisFileDirectory)App.xaml.cpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)App.xaml.h" />
+    <CLCompile Include="$(MSBuildThisFileDirectory)pch.cpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Other\Hilfsfunctionen.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Mediaplayer\Mediaplayer.cpp">
+      <Filter>MediaPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Advertising\appAd.cpp">
+      <Filter>Advertising</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)UIManagerShared.cpp">
+      <Filter>UIManagerShared</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="MediaPlayer">
+      <UniqueIdentifier>{9489af86-7833-4aa9-ac10-f839fd824efc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Other">
+      <UniqueIdentifier>{00d69cc5-a2a1-4bed-8ca3-8f91c75420f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Advertising">
+      <UniqueIdentifier>{c8698233-6a63-4294-bb7f-17cfe0e085e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UIManagerShared">
+      <UniqueIdentifier>{63da4551-4292-43d4-86ca-7c8752d4645c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Other\Hilfsfunctionen.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Mediaplayer\Mediaplayer.h">
+      <Filter>MediaPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Advertising\appAd.h">
+      <Filter>Advertising</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIManagerShared.h">
+      <Filter>UIManagerShared</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
