@@ -15,7 +15,7 @@ Bugs:
 #include "Mediaplayer.h"
 
 #include <ppltasks.h>
-# include <collection.h>
+#include <collection.h>
 
 
 using namespace MediaPlayer;
@@ -313,43 +313,46 @@ void Mediaplayer::Next(bool manual)
 		2->Repeat-one
 		3->Shuffel
 	*/
-	this->Pause();
-	this->JumpTo(0);
-	bool more = true;
-	this->autoplay = true;
-	if (this->MediaFiles->Size <= this->acttrack + 1)
+	if (this->MediaFiles != nullptr)
 	{
-		more = false;
-	}
-	switch (this->mode)
-	{
-	
-	case 2:
-		if (manual == false)
+		this->Pause();
+		this->JumpTo(0);
+		bool more = true;
+		this->autoplay = true;
+		if (this->MediaFiles->Size <= this->acttrack + 1)
 		{
-			this->Player->Play();  //Fixes Bug Not Playing at single repeat but only work around
-			this->Play();
+			more = false;
+		}
+		switch (this->mode)
+		{
+
+		case 2:
+			if (manual == false)
+			{
+				this->Player->Play();  //Fixes Bug Not Playing at single repeat but only work around
+				this->Play();
+				break;
+			}
+		case 1:
+		case 0:
+			if (more == true)
+			{
+				this->acttrack++;
+				this->openstream();
+			}
+			else
+			{
+				if (mode == 0)
+					autoplay = false;
+				this->acttrack = 0;
+				this->openstream();
+			}
+			break;
+		case 3:
+			acttrack = rand() % (MediaFiles->Size);
+			this->openstream();
 			break;
 		}
-	case 1:
-	case 0:
-		if (more == true)
-		{
-			this->acttrack++;
-			this->openstream();
-		}
-		else
-		{
-			if (mode==0)
-				autoplay = false;
-			this->acttrack = 0;
-			this->openstream();
-		}
-		break;
-	case 3:
-		acttrack = rand() % (MediaFiles->Size);
-		this->openstream();
-		break;
 	}
 }
 

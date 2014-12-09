@@ -16,26 +16,54 @@
     <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <ClCompile Include="$(MSBuildThisFileDirectory)Advertising\appAd.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Advertising\appAd.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)App.xaml.cpp">
       <DependentUpon>$(MSBuildThisFileDirectory)App.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Mediaplayer\Mediaplayer.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Other\Hilfsfunctionen.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Settings.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)UIManagerShared.cpp" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)Advertising\appAd.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Advertising\appAd.h">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)App.xaml.h">
       <DependentUpon>$(MSBuildThisFileDirectory)App.xaml</DependentUpon>
     </ClInclude>
     <ClCompile Include="$(MSBuildThisFileDirectory)pch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Constands.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Mediaplayer\Mediaplayer.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Other\Hilfsfunctionen.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Settings.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)UIManagerShared.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)DefaultButtonStyles.xaml">
+      <DeploymentContent>true</DeploymentContent>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild>false</ExcludedFromBuild>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="$(MSBuildThisFileDirectory)Resources\DefaultTheme\Background.jpg" />
+    <Image Include="$(MSBuildThisFileDirectory)Resources\DefaultTheme\noCover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)Resources\DefaultTheme\texts.json">
+      <DeploymentContent>true</DeploymentContent>
+      <FileType>Document</FileType>
+    </Text>
+    <Text Include="$(MSBuildThisFileDirectory)Resources\DefaultTheme\theme.json">
+      <DeploymentContent>true</DeploymentContent>
+      <FileType>Document</FileType>
+    </Text>
   </ItemGroup>
 </Project>

@@ -8,6 +8,15 @@
 //     the code is regenerated.
 //------------------------------------------------------------------------------
 
+namespace Windows {
+    namespace UI {
+        namespace Xaml {
+            namespace Controls {
+                ref class Grid;
+            }
+        }
+    }
+}
 
 namespace MediacenterUniversal
 {
@@ -21,6 +30,7 @@ namespace MediacenterUniversal
     private:
         bool _contentLoaded;
     
+        private: ::Windows::UI::Xaml::Controls::Grid^ mainGrid;
     };
 }
 

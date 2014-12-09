@@ -17,6 +17,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)UIManagerShared.cpp">
       <Filter>UIManagerShared</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Settings.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml" />
@@ -34,6 +35,18 @@
     <Filter Include="UIManagerShared">
       <UniqueIdentifier>{63da4551-4292-43d4-86ca-7c8752d4645c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Settings">
+      <UniqueIdentifier>{b83bdf6b-2727-4124-adc1-c827d2e7b106}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DefaultStyles">
+      <UniqueIdentifier>{6169d6f4-a5eb-4d73-b3c1-ebaf0ea78f19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{5e52296b-920f-4bb7-ac70-599fd79d59d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\DefaultTheme">
+      <UniqueIdentifier>{8c7c878d-2d57-47f1-b753-7a96d501f30c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)Other\Hilfsfunctionen.h">
@@ -48,5 +61,26 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)UIManagerShared.h">
       <Filter>UIManagerShared</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Constands.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Settings.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)DefaultButtonStyles.xaml">
+      <Filter>DefaultStyles</Filter>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="$(MSBuildThisFileDirectory)Resources\DefaultTheme\Background.jpg">
+      <Filter>Resources\DefaultTheme</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)Resources\DefaultTheme\noCover.png">
+      <Filter>Resources\DefaultTheme</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)Resources\DefaultTheme\texts.json" />
+    <Text Include="$(MSBuildThisFileDirectory)Resources\DefaultTheme\theme.json" />
   </ItemGroup>
 </Project>

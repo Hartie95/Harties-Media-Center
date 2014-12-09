@@ -135,9 +135,15 @@
     <ClInclude Include="MainPage.xaml.h">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </ClInclude>
+    <ClInclude Include="SettingsFlyout.xaml.h">
+      <DependentUpon>SettingsFlyout.xaml</DependentUpon>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SettingsFlyout.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
@@ -156,6 +162,9 @@
   <ItemGroup>
     <ClCompile Include="MainPage.xaml.cpp">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="SettingsFlyout.xaml.cpp">
+      <DependentUpon>SettingsFlyout.xaml</DependentUpon>
     </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -11,9 +11,11 @@
 
 #include "App.xaml.h"
 #include "MainPage.xaml.h"
+#include "SettingsFlyout.xaml.h"
 
 #include "App.g.hpp"
 #include "MainPage.g.hpp"
+#include "SettingsFlyout.g.hpp"
 
 ::Platform::Collections::Vector<::Windows::UI::Xaml::Markup::IXamlMetadataProvider^>^ ::XamlTypeInfo::InfoProvider::XamlTypeInfoProvider::OtherProviders::get()
 {
@@ -72,6 +74,16 @@
         return ref new XamlSystemBaseType(typeName);
     }
 
+    if (typeName == L"Windows.UI.Xaml.Controls.SettingsFlyout")
+    {
+        return ref new XamlSystemBaseType(typeName);
+    }
+
+    if (typeName == L"Windows.UI.Xaml.Controls.ContentControl")
+    {
+        return ref new XamlSystemBaseType(typeName);
+    }
+
     if (typeName == L"MediacenterUniversal.MainPage")
     {
         ::XamlTypeInfo::InfoProvider::XamlUserType^ userType = ref new ::XamlTypeInfo::InfoProvider::XamlUserType(this, typeName, GetXamlTypeByName(L"Windows.UI.Xaml.Controls.Page"));
@@ -80,6 +92,19 @@
             []() -> Platform::Object^ 
             {
                 return ref new ::MediacenterUniversal::MainPage(); 
+            };
+        userType->SetIsLocalType();
+        return userType;
+    }
+
+    if (typeName == L"MediacenterUniversal.SettingsFlyout")
+    {
+        ::XamlTypeInfo::InfoProvider::XamlUserType^ userType = ref new ::XamlTypeInfo::InfoProvider::XamlUserType(this, typeName, GetXamlTypeByName(L"Windows.UI.Xaml.Controls.SettingsFlyout"));
+        userType->KindOfType = ::Windows::UI::Xaml::Interop::TypeKind::Custom;
+        userType->Activator =
+            []() -> Platform::Object^ 
+            {
+                return ref new ::MediacenterUniversal::SettingsFlyout(); 
             };
         userType->SetIsLocalType();
         return userType;

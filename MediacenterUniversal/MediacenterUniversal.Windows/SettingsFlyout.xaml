@@ -1,0 +1,38 @@
+﻿<SettingsFlyout
+    x:Class="MediacenterUniversal.SettingsFlyout"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MediacenterUniversal"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    IconSource="Assets/SmallLogo.png"
+    Title="Theme Configuration"
+    d:DesignWidth="346">
+
+    <!-- Dieser StackPanel fungiert als vertikales Layout der Inhaltsabschnitte -->
+    <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
+
+        <!-- Die StackPanels unten definieren individuelle Inhaltsabschnitte -->
+
+        <!-- Inhaltsabschnitt 1-->
+        <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}">
+
+            <!-- Abschnitt 1 Header -->
+            <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="Theme" />
+
+            <!-- Abschnitt 1 Textkörper -->
+            <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,25" TextWrapping="Wrap">
+                <TextBlock.Text>
+                    Warning: Current Playback will be restarted after the change of the Theme
+                </TextBlock.Text>
+            </TextBlock>
+            <ComboBox x:Name="themeBox" Width="100" SelectedValue="Default">
+                <x:String>Default</x:String>
+            </ComboBox>
+        </StackPanel>
+
+        <!-- Weitere Inhaltsabschnitte nach Bedarf definieren -->
+
+    </StackPanel>
+</SettingsFlyout>

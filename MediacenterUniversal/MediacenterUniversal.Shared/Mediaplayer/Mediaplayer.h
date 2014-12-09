@@ -4,7 +4,7 @@ using namespace Windows::UI::Xaml::Controls;
 using namespace Windows::Storage;
 using namespace Windows::Foundation::Collections;
 
-#include "Hilfsfunctionen.h"
+#include "Other\Hilfsfunctionen.h"
 
 namespace MediaPlayer
 {

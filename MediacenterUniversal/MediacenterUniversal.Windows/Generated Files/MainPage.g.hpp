@@ -22,6 +22,8 @@ void ::MediacenterUniversal::MainPage::InitializeComponent()
     // Call LoadComponent on ms-appx:///MainPage.xaml
     ::Windows::UI::Xaml::Application::LoadComponent(this, ref new ::Windows::Foundation::Uri(L"ms-appx:///MainPage.xaml"), ::Windows::UI::Xaml::Controls::Primitives::ComponentResourceLocation::Application);
 
+    // Get the Grid named 'mainGrid'
+    mainGrid = safe_cast<::Windows::UI::Xaml::Controls::Grid^>(static_cast<Windows::UI::Xaml::IFrameworkElement^>(this)->FindName(L"mainGrid"));
 }
 
 void ::MediacenterUniversal::MainPage::Connect(int connectionId, Platform::Object^ target)
