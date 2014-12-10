@@ -204,6 +204,10 @@ void  UIManagerShared::appendStyles(Windows::Data::Json::IJsonValue^ value)
 			{
 				this->setBackground(key, jsonObject->GetNamedObject("background"));
 			}
+			else
+			{
+				this->setBackground(key);
+			}
 			this->setVertikalAlign(element, valign);
 			this->setHorizontalAlign(element, halign);
 			this->setZIndex(element, zIndex);
@@ -490,6 +494,13 @@ void UIManagerShared::setHorizontalAlign(Windows::UI::Xaml::FrameworkElement^ el
 void UIManagerShared::setZIndex(Windows::UI::Xaml::FrameworkElement^ element, int layer)
 {
 	Windows::UI::Xaml::Controls::Canvas::SetZIndex(element, layer);
+}
+
+void UIManagerShared::setBackground(String^ key)
+{
+		Windows::UI::Xaml::Media::SolidColorBrush^ Brush = ref new Windows::UI::Xaml::Media::SolidColorBrush();
+		Brush->Color = getColorFromString("Black");
+		setBrush(Brush, key);
 }
 
 void UIManagerShared::setBackground(String^ key, Windows::Data::Json::JsonObject^ jsonObject)
@@ -944,7 +955,8 @@ Windows::UI::Color UIManagerShared::getColorFromString(String^ colorString)
 	else if (colorString == "royalBlue" || colorString == "RoyalBlue")
 		return Windows::UI::Colors::RoyalBlue;
 
-	else if (colorString == "saddleBrown" || colorString == "SaddleBrown")
+	//Break because of to many else ifs
+	if (colorString == "saddleBrown" || colorString == "SaddleBrown")
 		return Windows::UI::Colors::SaddleBrown;
 	else if (colorString == "salmon" || colorString == "Salmon")
 		return Windows::UI::Colors::Salmon;

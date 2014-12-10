@@ -37,6 +37,7 @@ namespace UIManager
 		void setVertikalAlign(Windows::UI::Xaml::FrameworkElement^ element, String^ Align);
 		void setHorizontalAlign(Windows::UI::Xaml::FrameworkElement^ element, String^ Align);
 		void setZIndex(Windows::UI::Xaml::FrameworkElement^ element, int layer);
+		void setBackground(String^ key);
 		void setBackground(String^ key, Windows::Data::Json::JsonObject^ jsonObject);
 		void setBrush(Windows::UI::Xaml::Media::Brush^ Brush, String^ elementKey);
 		void setBackgroundImage(String^ key, StorageFile^ BackgroundImage);
