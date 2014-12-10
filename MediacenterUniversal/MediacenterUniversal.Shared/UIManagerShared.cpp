@@ -914,15 +914,93 @@ Windows::UI::Color UIManagerShared::getColorFromString(String^ colorString)
 	else if (colorString == "orchid" || colorString == "Orchid")
 		return Windows::UI::Colors::Orchid;
 
+	else if (colorString == "paleGoldenrod" || colorString == "PaleGoldenrod")
+		return Windows::UI::Colors::PaleGoldenrod;
+	else if (colorString == "paleGreen" || colorString == "PaleGreen")
+		return Windows::UI::Colors::PaleGreen;
+	else if (colorString == "paleTurquoise" || colorString == "PaleTurquoise")
+		return Windows::UI::Colors::PaleTurquoise;
+	else if (colorString == "paleVioletRed" || colorString == "PaleVioletRed")
+		return Windows::UI::Colors::PaleVioletRed;
+	else if (colorString == "papayaWhip" || colorString == "PapayaWhip")
+		return Windows::UI::Colors::PapayaWhip;
+	else if (colorString == "peachPuff" || colorString == "PeachPuff")
+		return Windows::UI::Colors::PeachPuff;
+	else if (colorString == "peru" || colorString == "Peru")
+		return Windows::UI::Colors::Peru;
+	else if (colorString == "pink" || colorString == "Pink")
+		return Windows::UI::Colors::Pink;
+	else if (colorString == "plum" || colorString == "Plum")
+		return Windows::UI::Colors::Plum;
+	else if (colorString == "powderBlue" || colorString == "PowderBlue")
+		return Windows::UI::Colors::PowderBlue;
+	else if (colorString == "purple" || colorString == "Purple")
+		return Windows::UI::Colors::Purple;
 
-	else if (colorString == "white" || colorString == "White")
-		return Windows::UI::Colors::White;
 	else if (colorString == "red" || colorString == "Red")
 		return Windows::UI::Colors::Red;
+	else if (colorString == "rosyBrown" || colorString == "RosyBrown")
+		return Windows::UI::Colors::RosyBrown;
+	else if (colorString == "royalBlue" || colorString == "RoyalBlue")
+		return Windows::UI::Colors::RoyalBlue;
+
+	else if (colorString == "saddleBrown" || colorString == "SaddleBrown")
+		return Windows::UI::Colors::SaddleBrown;
+	else if (colorString == "salmon" || colorString == "Salmon")
+		return Windows::UI::Colors::Salmon;
+	else if (colorString == "sandyBrown" || colorString == "SandyBrown")
+		return Windows::UI::Colors::SandyBrown;
+	else if (colorString == "seaGreen" || colorString == "SeaGreen")
+		return Windows::UI::Colors::SeaGreen;
+	else if (colorString == "seaShell" || colorString == "SeaShell")
+		return Windows::UI::Colors::SeaShell;
+	else if (colorString == "sienna" || colorString == "Sienna")
+		return Windows::UI::Colors::Sienna;
+	else if (colorString == "silver" || colorString == "Silver")
+		return Windows::UI::Colors::Silver;
+	else if (colorString == "skyBlue" || colorString == "SkyBlue")
+		return Windows::UI::Colors::SkyBlue;
+	else if (colorString == "slateBlue" || colorString == "SlateBlue")
+		return Windows::UI::Colors::SlateBlue;
+	else if (colorString == "slateGray" || colorString == "SlateGray")
+		return Windows::UI::Colors::SlateGray;
+	else if (colorString == "snow" || colorString == "Snow")
+		return Windows::UI::Colors::Snow;
+	else if (colorString == "springGreen" || colorString == "SpringGreen")
+		return Windows::UI::Colors::SpringGreen;
+	else if (colorString == "steelBlue" || colorString == "SteelBlue")
+		return Windows::UI::Colors::SteelBlue;
+
+	else if (colorString == "tan" || colorString == "Tan")
+		return Windows::UI::Colors::Tan;
+	else if (colorString == "teal" || colorString == "Teal")
+		return Windows::UI::Colors::Teal;
+	else if (colorString == "thistle" || colorString == "Thistle")
+		return Windows::UI::Colors::Thistle;
+	else if (colorString == "tomato" || colorString == "Tomato")
+		return Windows::UI::Colors::Tomato;
+	else if (colorString == "transparent" || colorString == "Transparent")
+		return Windows::UI::Colors::Transparent;
+	else if (colorString == "turquoise" || colorString == "Turquoise")
+		return Windows::UI::Colors::Turquoise;
+
+	else if (colorString == "violet" || colorString == "Violet")
+		return Windows::UI::Colors::Violet;
+
+	else if (colorString == "wheat" || colorString == "Wheat")
+		return Windows::UI::Colors::Wheat;
+	else if (colorString == "white" || colorString == "White")
+		return Windows::UI::Colors::White;
+	else if (colorString == "whiteSmoke" || colorString == "WhiteSmoke")
+		return Windows::UI::Colors::WhiteSmoke;
+
 	else if (colorString == "yellow" || colorString == "Yellow")
 		return Windows::UI::Colors::Yellow;
+	else if (colorString == "yellowGreen" || colorString == "YellowGreen")
+		return Windows::UI::Colors::YellowGreen;
 	else
 		return Windows::UI::Colors::White;
+
 }
 
 
