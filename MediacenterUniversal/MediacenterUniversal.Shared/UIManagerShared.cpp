@@ -1024,10 +1024,13 @@ void UIManagerShared::playlistButtonTapped(Object^ sender, Windows::UI::Xaml::In
 
 
 /*Todo
-window size changed only do needed changes
+window size changed only do needed changes and use min width
 themes:
 	implement background(other gradient)
-	implement colors better
-implement landscape and ****
+	implement self defined Colors
+	implement landscape and Portrait
+	implement autohiding of grids
 more error handlich(json for example)
+reimplement Playlist
+
 */
