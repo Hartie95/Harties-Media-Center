@@ -1,0 +1,261 @@
+{
+    "name": "DefaultTheme",
+    "creator": "Alexander Hartmann",
+    "version": 0.1,
+    "partsVertical": 20,
+    "partsHorizontal": 30,
+    "Content": {
+        "gridMediaPlayer": {
+
+            "1": "mediaPlayer",
+            "gridBottombar": {
+                "1": "buttonPlayPause",
+                "2": "buttonNext",
+                "3": "buttonPreviuos",
+                "4": "buttonMode",
+                "5": "sliderTime",
+                "6": "textTimePlayed",
+                "7": "textTimeTotal",
+                "8": "sliderVolume"
+            },
+            "gridHeaderbar": {
+                "1": "buttonBack",
+                "2": "imageMediaCover",
+                "3": "textMediaTitle",
+                "4": "buttonPlaylist"
+            }
+        }
+    },
+    "styles": {
+        "gridMediaPlayer": { 
+            "background": {
+                "type": "image",
+                "source": "Background.jpg"
+            }
+        },
+        "mediaPlayer": {
+            "width": 0,
+            "height": 0,
+            "verticalAlign": "center",
+            "horizontalAlign": "center",
+            "z-index": -1,
+            "margin": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+            }
+        },
+        "sliderVolume": {
+            "width": 4,
+            "height": 1,
+            "verticalAlign": "center",
+            "horizontalAlign": "right",
+            "margin": {
+                "left": 0,
+                "right": 1,
+                "top": 0,
+                "bottom": 0
+            }
+        },
+        "textTimeTotal": {
+            "width": 1,
+            "height": 1,
+            "verticalAlign": "center",
+            "horizontalAlign": "Right",
+            "foregroundColor": "White",
+            "margin": {
+                "left": 0,
+                "right": 5,
+                "top": 0,
+                "bottom": 0
+            }
+        },
+        "textTimePlayed": {
+            "width": 1,
+            "height": 1,
+            "verticalAlign": "center",
+            "horizontalAlign": "right",
+            "foregroundColor": "white",
+            "margin": {
+                "left": 0,
+                "right": 6,
+                "top": 0,
+                "bottom": 0
+            }
+        },
+        "sliderTime": {
+            "width": 8,
+            "height": 1,
+            "verticalAlign": "center",
+            "horizontalAlign": "Right",
+            "margin": {
+                "left": 0,
+                "right": 7,
+                "top": 0,
+                "bottom": 0
+            }
+        },
+        "gridHeaderbar": {
+            "width": 30,
+            "height": 2,
+            "verticalAlign": "top",
+            "horizontalAlign": "center",
+            "margin": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+            },
+             "background": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "gradientStops": {
+                    "1": {
+                        "color": "black",
+                        "offset": 0.99
+                    },
+                    "2": {
+
+                        "offset": 0
+                    }
+                },
+                "startPointX": 0,
+                "startPointY": 1.2,
+                "endPointX": 0,
+                "endPointY": 0
+            }
+        },
+        "gridBottombar": {
+            "width": 30,
+            "height": 2,
+            "verticalAlign": "bottom",
+            "horizontalAlign": "Center",
+            "background": {
+                "type": "color",
+                "color": "black"
+            },
+            "margin": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+            },
+             "background": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "gradientStops": {
+                    "1": {
+                        "offset": 0
+                        
+                    },
+                    "2": {
+                        "color": "black",
+                        "offset": 0.99
+                    }
+                },
+                "startPointX": 0,
+                "startPointY": -0.2,
+                "endPointX": 0,
+                "endPointY": 1
+            }
+        },
+        "buttonPlayPause": {
+            "width": 2,
+            "height": 2,
+            "verticalAlign": "center",
+            "horizontalAlign": "left",
+            "margin": {
+                "left": 1,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+            }
+        },
+        "buttonPreviuos": {
+            "width": 2,
+            "height": 2,
+            "verticalAlign": "center",
+            "horizontalAlign": "left",
+            "margin": {
+                "left": 3,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+            }
+        },
+        "buttonNext": {
+            "width": 2,
+            "height": 2,
+            "verticalAlign": "center",
+            "horizontalAlign": "left",
+            "margin": {
+                "left": 5,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+            }
+        },
+        "buttonMode": {
+            "width": 2,
+            "height": 2,
+            "verticalAlign": "center",
+            "horizontalAlign": "left",
+            "foregroundColor": "gray",
+            "margin": {
+                "left": 7,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+            }
+        },
+        "buttonBack": {
+            "width": 2,
+            "height": 2,
+            "verticalAlign": "center",
+            "horizontalAlign": "left",
+            "margin": {
+                "left": 1,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+            }
+        },
+        "imageMediaCover": {
+            "width": 2,
+            "height": 2,
+            "verticalAlign": "center",
+            "horizontalAlign": "left",
+            "margin": {
+                "left": 5,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+            }
+        },
+        "textMediaTitle": {
+            "width": 2,
+            "height": 2,
+            "verticalAlign": "center",
+            "horizontalAlign": "center",
+            "margin": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+            }
+        },
+        "buttonPlaylist": {
+            "width": 2,
+            "height": 2,
+            "verticalAlign": "center",
+            "horizontalAlign": "right",
+            "margin": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+            }
+        }
+    }
+}
