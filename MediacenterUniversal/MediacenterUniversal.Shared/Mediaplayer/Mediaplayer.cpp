@@ -1497,4 +1497,3 @@ void Mediaplayer::VolumeChanged(Platform::Object^ sender, Windows::UI::Xaml::Con
 {
 		this->SetVolume(this->VolumeSlider->Value / 100);
 }
-//müsste klappen ???
