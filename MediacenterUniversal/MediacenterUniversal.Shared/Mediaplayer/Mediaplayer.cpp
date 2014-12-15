@@ -630,7 +630,7 @@ void Mediaplayer::OpenFiles(IVectorView<StorageFile^>^ toOpen)
 
 void Mediaplayer::AddFiles()
 {
-	Windows::Storage::Pickers::FileOpenPicker^ openPicker = help::create_open_picker("Hinzuf¸gen");
+	Windows::Storage::Pickers::FileOpenPicker^ openPicker = help::create_open_picker("Hinzuf√ºgen");
 	create_task(openPicker->PickMultipleFilesAsync()).then([this] (IVectorView<StorageFile^>^ toAdd)
 	{
 		if (toAdd->Size>0)
@@ -1308,7 +1308,7 @@ void Mediaplayer::MediaOpened(Platform::Object^ sender, Windows::UI::Xaml::Route
 void Mediaplayer::MediaPlaybackFailed(Platform::Object^ sender, Windows::UI::Xaml::ExceptionRoutedEventArgs^ e)
 {
 	/*Todo*/
-	//Windows::UI::Popups::MessageDialog^ msbox = ref new Windows::UI::Popups::MessageDialog("Fehler Beim ˆffnen der Datei");
+	//Windows::UI::Popups::MessageDialog^ msbox = ref new Windows::UI::Popups::MessageDialog("Fehler Beim √∂ffnen der Datei");
 
 }
 
@@ -1497,3 +1497,4 @@ void Mediaplayer::VolumeChanged(Platform::Object^ sender, Windows::UI::Xaml::Con
 {
 		this->SetVolume(this->VolumeSlider->Value / 100);
 }
+//m√ºsste klappen ???
